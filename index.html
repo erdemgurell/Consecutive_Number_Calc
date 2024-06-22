@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consecutive Number Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="container">
-    <h1>Consecutive Number Calculator</h1>
-    <div class="input-group">
-        <label for="startNumber">Starting Number:</label>
-        <input type="number" id="startNumber" name="startNumber">
-    </div>
-    <div class="input-group">
-        <label for="count">Count of Consecutive Numbers:</label>
-        <input type="number" id="count" name="count">
-    </div>
-    <div class="checkbox-group">
-        <input type="checkbox" id="includeEdgeNumbers" name="includeEdgeNumbers">
-        <label for="includeEdgeNumbers">Include Edges</label>
-    </div>
-    <button onclick="calculateConsecutiveNumbers()">Calculate</button>
-    <div class="result" id="result"></div>
-    <br>
-    <div class="printer" id="printer"></div>
-</div>
 
-<script src="script.js" ></script>
+<body>
+    <div class="container">
+        <h1>Consecutive Number Calculator</h1>
+        <div class="input-group">
+            <label for="startNumber">Starting Number:</label>
+            <input type="number" id="startNumber" name="startNumber">
+        </div>
+        <div class="input-group">
+            <label for="count">Count of Consecutive Numbers:</label>
+            <input type="number" id="count" name="count">
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="includeEdgeNumbers" name="includeEdgeNumbers">
+            <label for="includeEdgeNumbers">Include Edges</label>
+            <input type="checkbox" id="sumDigits" name="sumDigits">
+            <label for="sumDigits">Sum Digits</label>
+
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div class="result" id="result"></div>
+        <br>
+        <div class="printer" id="printer"></div>
+    </div>
+
+    <script src="script.js" ></script>
+
 </body>
+
+
 </html>

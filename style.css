@@ -24,8 +24,9 @@ input[type="number"] {
   margin-bottom: 15px;
 }
 .checkbox-group label {
-  margin-left: 10px;
+  margin-left: 5px;
   margin-bottom: 0;
+  padding-right: 5%;
 }
 button {
   padding: 10px 15px;
